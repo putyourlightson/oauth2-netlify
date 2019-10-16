@@ -12,4 +12,6 @@ composer require putyourlightson/oauth2-netlify
 
 Usage is the same as The League's [OAuth 2 client](https://oauth2-client.thephpleague.com/usage/), using `Putyourlightson\OAuth2\Client\Provider\Netlify` as the provider.
 
+---
+
 Created by [PutYourLightsOn](https://putyourlightson.com/).
