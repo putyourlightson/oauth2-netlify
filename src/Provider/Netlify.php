@@ -36,7 +36,7 @@ class Netlify extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://api.netlify.com/api/v1/user';
+        return 'https://api.netlify.com/api/v1/user?access_token='.$token->getToken();
     }
 
     // Protected Methods
@@ -67,6 +67,6 @@ class Netlify extends AbstractProvider
      */
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return new NetlifyResourceOwner($response, $this->responseResourceOwnerId);
+        return new NetlifyResourceOwner($response);
     }
 }
