@@ -1,0 +1,30 @@
+{
+    "name": "putyourlightson/oauth2-netlify",
+    "description": "Netlify deployer for the Blitz plugin for Craft CMS.",
+    "version": "1.0.0",
+    "type": "oauth2-provider",
+    "license": "MIT",
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authorisation",
+        "netlify"
+    ],
+    "require": {
+        "league/oauth2-client": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "Putyourlightson\\OAuth2\\Client\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "OAuth2 Netlify Provider",
+        "developer": "PutYourLightsOn",
+        "developerUrl": "https://putyourlightson.com/",
+        "documentationUrl": "https://putyourlightson.com/plugins/blitz",
+        "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/oauth2-netlify/v1/CHANGELOG.md"
+    }
+}
